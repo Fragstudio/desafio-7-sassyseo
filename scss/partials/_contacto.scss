@@ -1,0 +1,65 @@
+@import "../sass2/maps";
+@import "../sass2/extend";
+
+form {
+    margin-top: map-get($form, top);
+    text-align: center;
+    color: white;
+    @extend .font;
+    select {
+        border-radius: map-get($form, border);
+    }
+    textarea {
+        border-radius: map-get($form, border);
+        width: 90%;
+    }
+    .ulForm {
+        list-style: none;
+    }
+        input{
+            border-radius: map-get($form, border);
+            &:focus {
+                transform: scale(1.02);
+            }
+        }
+        .ulFormLuno {
+            margin-bottom: map-get($form, bot);
+        }
+        .ulFormIuno {
+            margin-bottom: map-get($form, bot);
+            margin-right: 10px;
+        }
+        .ulFormLdos {
+            margin-bottom: map-get($form, bot);
+        }
+        .ulFormIdos {
+            margin-bottom: map-get($form, bot);
+            margin-right: map-get($form, right);
+        }
+        .ulFormLtres {
+            margin-bottom: map-get($form, bot);
+        }
+        .ulFormItres {
+            margin-bottom: map-get($form, bot);
+            margin-right: map-get($form, right);
+        }
+    .divForm {
+        margin-top: map-get($form, top);
+        margin-bottom: map-get($form, bot);
+    }
+    .formCheck {
+        margin-top: map-get($form, top);
+        margin-bottom: map-get($form, bot);
+    }
+    .ulFormDos {
+        list-style: none;
+    }
+        .ulFormDosIcuatro {
+            margin-bottom: map-get($form, bot);
+            margin-right: map-get($form, right);
+        }
+        .ulFormDosIcinco {
+            margin-bottom: map-get($form, bot);
+            margin-right: map-get($form, right);
+        }
+}
